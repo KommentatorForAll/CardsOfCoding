@@ -1,0 +1,48 @@
+playing cards
+4 types of instrcutions
+13 values
+
+io (clubs)
+math (spade)
+flow control (diamond)
+storage manipulation (hearts)
+
+
+c1 -> input as ascii [number expression]
+c2 -> input as number [number expression]
+c3 -> input as raw number; sum of following as c[0] h[1] s[2] d[3] until c3 [number expression]
+
+c4 <number expression> -> output as ascii
+c5 <number expression> -> output as number
+
+
+h1 <number expression> -> push following to stack
+h1 c2 -> pushes the inputted number onto the stack
+
+h2 -> pop from stack [number expression]
+
+h3 -> swap top two values of the stack
+
+h4 <variable card> <number expression> -> define variable
+h4 s1 c2 -> stores the user input in the s1 variable
+
+h5 <var name> -> read variable [number expression]
+
+h6 -> clones top value of the stack
+
+
+[number expressions]
+s1 -> add following two numbers [number expression]
+s2 -> subtract following two numbers [number expression]
+s3 -> multiply 
+s4 -> divide (int div)
+s5 -> modulu
+s6 <number expression> -> 1 if ne is 0 else 0
+
+
+d1 -> start code block
+d2 -> end code block
+d3 <number expression> <code block> -> execute following statement or codeblock if expression is not 0
+d4 <number expression> <code block> -> repeat codeblock until expression is 0
+d5 <function card> <code block> -> save codeblock to funcion card
+d6 <function card> -> execute saved codeblock
